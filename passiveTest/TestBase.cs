@@ -1,18 +1,25 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.IO;
-namespace passiveTest.TestBase
+
+namespace passiveTest
 {
     public class TestBase
     {
         public static IWebDriver driver { get; set; }
 
-        public void SetUpEnvironment()
+        public void LaunchBrowser()
         {
-            driver = new ChromeDriver();
             string Name = System.Environment.UserName;
-            driver.Navigate().GoToUrl("file://C:/Users/"+Name+"/Desktop/passiveTest/passiveTest/Website.html");
+            driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("file://C:/Users/" + Name + "/passiveTest/passiveTest/Website.html");
         }
 
+
+        [TearDown]
+        public void TearDownEnvironment()
+        {
+            driver.Quit();
+        }
     }
 }

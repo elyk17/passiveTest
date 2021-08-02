@@ -66,8 +66,8 @@
   <ItemGroup>
     <Compile Include="pageObjects.cs" />
     <Compile Include="passiveTest.cs" />
-    <Compile Include="TestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
