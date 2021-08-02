@@ -1,0 +1,7 @@
+Other tests that could be run after adding the movie.
+1. Validate that there is a search feature  for movies in the system and make sure that the movie has been saved.
+	.Positive test to validate saved movies exist.
+	.Negative test to validate that any movies that had any invalid data were not saved to database.
+2. Perform a database test to validate that the movies were added with all of the appropriate information.
+3. Perform a test where one of the movies is deleted from the database and then validate that it doesn't appear in the video section.
+3. I would go back and write a test to perform positive and negative login tests using alphanumeric characters as well as valid and invalid credentials.
