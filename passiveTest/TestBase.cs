@@ -12,7 +12,7 @@ namespace passiveTest
         {
             string Name = System.Environment.UserName;
             driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("file://C:/Users/" + Name + "/passiveTest/passiveTest/Website.html");
+            driver.Navigate().GoToUrl("file://C:/Users/" + Name + "/Documents/GitHub/passiveTest/passiveTest/Website.html");
         }
 
 
